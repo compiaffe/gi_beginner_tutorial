@@ -1,4 +1,3 @@
-# %Tag(FULLTEXT)%
 cmake_minimum_required(VERSION 2.8.3)
 project(gi_test)
 
@@ -25,5 +24,3 @@ add_dependencies(talker gi_test_generate_messages_cpp)
 add_executable(listener src/listener.cpp)
 target_link_libraries(listener ${catkin_LIBRARIES})
 add_dependencies(listener gi_test_generate_messages_cpp)
-
-# %EndTag(FULLTEXT)%
