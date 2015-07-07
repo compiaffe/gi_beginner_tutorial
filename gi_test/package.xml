@@ -1,20 +1,17 @@
 <package>
-  <name>gi_test</name>
-  <version>0.0.0</version>
-  <description>The gi_test package</description>
-
-  <maintainer email="euratlhon@todo.todo">euratlhon</maintainer>
-  <license>TODO</license>
-
+  <name>arbotix_controllers</name>
+  <version>0.10.0</version>
+  <description>
+    Extends the arbotix_python package with a number of more sophisticated ROS wrappers for common devices.
+  </description>
+  <author>Michael Ferguson</author>
+  <maintainer email="mike@vanadiumlabs.com">Michael Ferguson</maintainer>
+  <license>BSD</license>
+  <url>http://ros.org/wiki/arbotix_controllers</url>
+  
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>roscpp</build_depend>
-  <build_depend>rospy</build_depend>
-  <build_depend>std_msgs</build_depend>
-  <run_depend>roscpp</run_depend>
-  <run_depend>rospy</run_depend>
-  <run_depend>std_msgs</run_depend>
 
-  <export>
-
-  </export>
+  <run_depend>arbotix_python</run_depend>
+  <run_depend>trajectory_msgs</run_depend>
+  <run_depend>tf</run_depend>
 </package>
